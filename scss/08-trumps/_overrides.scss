@@ -1,0 +1,12 @@
+// OVERRIDES
+
+// Navbar bootstrap
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:focus:not(:focus-visible) {
+  box-shadow: none;
+  outline: 1px solid var(--color-white);
+}

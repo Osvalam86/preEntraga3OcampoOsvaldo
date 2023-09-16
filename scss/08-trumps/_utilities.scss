@@ -1,0 +1,9 @@
+// UTILITIES
+.u {
+  &-btn-custom-w {
+    width: 100%;
+    @include respond-to(md) {
+      width: 50%;
+    }
+  }
+}

@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
   const path = document.location.pathname,
-    title = document.title.toUpperCase();
+    hrefDocument = document.location.href.toUpperCase();
 
   // Home functionality
-  if (path.includes("index.html") || title === "INICIO") {
+  if (path.includes("index.html") || hrefDocument.includes("INDEX")) {
     //DATA
     const $introContainer = document.getElementById("introContainer");
 
@@ -29,9 +29,9 @@ document.addEventListener("DOMContentLoaded", () => {
         return false;
       }
       const $content = `
-        <h2 class="font-title">${info.title}</h2>
+        <h2 class="o-font-title mb-3">${info.title}</h2>
         ${info.intro}
-        <a href="javascript:;" class="btn btn-primary btn--width mt-4 js-modal"
+        <a href="javascript:;" class="btn c-btn-primary u-btn-custom-w mt-4 js-modal"
           >Saber más</a
         >
       `;
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     $mainSlider.slick({
       infinite: true,
-      autoplay: true,
+      autoplay: false,
       slidesToShow: 3,
       slidesToScroll: 1,
       speed: 300,

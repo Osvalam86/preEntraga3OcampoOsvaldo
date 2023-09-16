@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Osvaldo Ocampo" />
+    <meta name="copyright" content="Copyright Osvaldo Ocampo 2023" />
+    <meta
+      name="description"
+      content="El Spiderverso cuenta con una gran variedad de comic's. Sus distintos Spider-man y emocionantes personajes, te harán querer adentrarte cada vez más en sus historias. Y tú, ¿ya los conoces todos?."
+    />
+    <title>Página principal | El Spiderverso</title>
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/general/favicon.png"
+      type="image/x-icon"
+    />
+    <!-- Bootstrap stylesheet -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- Slick stylesheets -->
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/slick-theme.css" />
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header class="o-shadow-header fixed-top">
+      <nav class="navbar navbar-expand-lg c-navbar">
+        <div class="container">
+          <a class="navbar-brand" href="./index.html">
+            <img
+              src="./assets/images/general/logotipo.png"
+              alt="Spiderverso logo"
+              class="navbar-brand__logo"
+            />
+          </a>
+          <button
+            class="navbar-toggler c-navbar__toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <label class="c-hamburger">
+              <input
+                class="c-hamburger__checkbox"
+                type="checkbox"
+                id="checkbox"
+              />
+              <svg class="c-hamburger__vector" viewBox="0 0 32 32">
+                <path
+                  class="c-hamburger__line c-hamburger__line--top-bottom"
+                  d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"
+                ></path>
+                <path class="c-hamburger__line" d="M7 16 27 16"></path>
+              </svg>
+            </label>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav c-navbar__nav">
+              <li class="nav-item c-navbar__item">
+                <a
+                  class="nav-link c-navbar__link active"
+                  aria-current="page"
+                  href="./index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item c-navbar__item">
+                <a
+                  class="nav-link c-navbar__link"
+                  href="./views/characters.html"
+                  >Spiderverso</a
+                >
+              </li>
+              <li class="nav-item c-navbar__item">
+                <a class="nav-link c-navbar__link" href="./views/comics.html"
+                  >Comics</a
+                >
+              </li>
+              <li class="nav-item c-navbar__item">
+                <a class="nav-link c-navbar__link" href="./views/videos.html"
+                  >Videos</a
+                >
+              </li>
+              <li class="nav-item c-navbar__item">
+                <a
+                  class="nav-link c-navbar__link"
+                  href="./views/contact-us.html"
+                  >Contáctanos</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main content -->
+    <main class="o-main align-items-center">
+      <h1 class="sr-only">Página principal del spiderverso</h1>
+      <div class="o-container-bg o-container-bg--home"></div>
+      <div class="container">
+        <div class="row o-row-slider">
+          <section class="col-xl-4 mb-5 mb-xl-0">
+            <div class="o-container-intro" id="introContainer"></div>
+          </section>
+          <section class="col-xl-8 align-self-end ps-xl-5">
+            <div class="c-slider" id="mainSlider">
+              <div class="card c-card-slider" data-position="1">
+                <img
+                  src="./assets/images/characters/gwen.webp"
+                  class="c-card-slider__bg-img"
+                  alt="Imagen de fondo con Gwen Spider como personaje principal"
+                />
+                <img
+                  src="./assets/images/characters/gwen-transparent.webp"
+                  class="c-card-slider__main-img"
+                  alt="Imagen de Gwen Spider"
+                />
+                <div class="card-img-overlay p-0">
+                  <strong class="card-title c-card-slider__title">
+                    <a class="c-card-slider__link js-modal" href="javascript:;"
+                      >Ghost Spider</a
+                    >
+                  </strong>
+                </div>
+              </div>
+              <div class="card c-card-slider" data-position="2">
+                <img
+                  src="./assets/images/characters/spider-2099.webp"
+                  class="c-card-slider__bg-img"
+                  alt="Imagen de fondo con Miguel O'Hara como personaje principal"
+                />
+                <img
+                  src="./assets/images/characters/spider-2099-transparent.webp"
+                  class="c-card-slider__main-img"
+                  alt="Imagen de Miguel O'Hara"
+                />
+                <div class="card-img-overlay p-0">
+                  <strong class="card-title c-card-slider__title">
+                    <a class="c-card-slider__link js-modal" href="javascript:;"
+                      >Miguel O'Hara</a
+                    >
+                  </strong>
+                </div>
+              </div>
+              <div class="card c-card-slider" data-position="3">
+                <img
+                  src="./assets/images/characters/spider-ham.webp"
+                  class="c-card-slider__bg-img"
+                  alt="Imagen de fondo con Spider Ham como personaje principal"
+                />
+                <img
+                  src="./assets/images/characters/spider-ham-transparent.webp"
+                  class="c-card-slider__main-img"
+                  alt="Imagen de Spider Ham"
+                />
+                <div class="card-img-overlay p-0">
+                  <strong class="card-title c-card-slider__title">
+                    <a class="c-card-slider__link js-modal" href="javascript:;"
+                      >Spider Ham</a
+                    >
+                  </strong>
+                </div>
+              </div>
+              <div class="card c-card c-card-slider" data-position="0">
+                <img
+                  src="./assets/images/characters/miles.webp"
+                  class="c-card-slider__bg-img img-fluid"
+                  alt="Imagen de fondo con Miles Morales como personaje principal"
+                />
+                <img
+                  src="./assets/images/characters/miles-transparent.webp"
+                  class="c-card-slider__main-img"
+                  alt="Imagen de Miles Morales"
+                />
+                <div class="card-img-overlay p-0">
+                  <strong class="card-title c-card-slider__title">
+                    <a class="c-card-slider__link js-modal" href="javascript:;"
+                      >Miles Morales</a
+                    >
+                  </strong>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="c-footer">
+      <div class="container c-footer__container">
+        <p class="c-footer__copyright">
+          <strong>Spiderverso | Todos los derechos reservados ©</strong>
+        </p>
+        <div class="c-social-networks">
+          <a
+            href="https://www.facebook.com/SpiderManATravesDelSpiderverso/?brand_redir=850223265102675"
+            class="c-social-networks__link c-social-networks__link--facebook"
+            target="_blank"
+          >
+            <span class="sr-only">Ir al Facebook oficial del Spiderverso</span>
+            <span class="c-social-networks__tooltip">Facebook</span>
+            <img
+              src="./assets/images/social/facebook.svg"
+              alt="Logotipo de Facebook"
+              class="c-social-networks__logo"
+            />
+          </a>
+          <a
+            href="https://twitter.com/los_vere_en_sue"
+            class="c-social-networks__link c-social-networks__link--twitter"
+            target="_blank"
+          >
+            <span class="sr-only">Ir al Twitter oficial del Spiderverso</span>
+            <span class="c-social-networks__tooltip">Twitter</span>
+            <img
+              src="./assets/images/social/twitter.svg"
+              alt="Logotipo de Twitter"
+              class="c-social-networks__logo"
+            />
+          </a>
+          <a
+            href="https://www.sonypictures.com.mx/peliculas/spider-man-traves-del-spider-verso"
+            class="c-social-networks__link c-social-networks__link--google"
+            target="_blank"
+          >
+            <span class="sr-only"
+              >Ir a la cuenta de Google del Spiderverso</span
+            >
+            <span class="c-social-networks__tooltip">Google</span>
+            <img
+              src="./assets/images/social/google.svg"
+              alt="Logotipo de Google +"
+              class="c-social-networks__logo"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal of We continue working for you -->
+    <div class="modal fade" id="modalWorking" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark text-light">
+          <div class="modal-header p-4">
+            <h5 class="modal-title h2">Página en progreso</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body px-4 py-5">
+            <p class="o-font-body-lg">
+              <strong>Continuamos trabajando para tí</strong>! La página a la
+              que deseas acceder por ahora se encuentra en desarrollo, pero muy
+              pronto estará lista para tí 😃.
+            </p>
+            <p class="o-font-body-lg mt-4">Agradecemos tu comprensión!!</p>
+          </div>
+          <div class="modal-footer border-top-0 pt-0 px-4 pb-4">
+            <button
+              type="button"
+              class="btn btn-primary u-btn-custom-w"
+              data-bs-dismiss="modal"
+            >
+              Enterado
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap script -->
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- necessary for the operation of the slider -->
+    <script src="./js/jquery-1.11.0.min.js"></script>
+    <script src="./js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+
+    <!-- Data & My Scripts -->
+    <script src="./js/data.js"></script>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>

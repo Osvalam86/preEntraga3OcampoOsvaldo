@@ -1,0 +1,28 @@
+.o-font {
+  &-title {
+    @include title();
+    @include respond-to(xs) {
+      font-size: $font-size-xxxl;
+    }
+    @include respond-to(sm) {
+      font-size: $font-size-xxxxl;
+    }
+  }
+  &-subtitle {
+    @include subtitle();
+  }
+  &-body-lg {
+    font-size: rem(24px);
+    line-height: rem(32px);
+    &:last-of-type {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    }
+    @include respond-to(lg) {
+      padding-right: rem(32px);
+    }
+  }
+}
