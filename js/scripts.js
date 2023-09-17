@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
   // Home functionality
-  if (path.includes("index.html") || hrefDocument.includes("INDEX")) {
+  if (path.includes("index.html") || document.title.includes("PRINCIPAL")) {
     //DATA
     const $introContainer = document.getElementById("introContainer");
 
