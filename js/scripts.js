@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const $content = `
         <h2 class="o-font-title mb-3">${info.title}</h2>
         ${info.intro}
-        <a href="javascript:;" class="btn c-btn-primary u-btn-custom-w mt-4"
+        <a href="./views/character-detail.html" class="btn c-btn-primary u-btn-custom-w mt-4"
           >Conoce más</a>
       `;
       $introContainer.innerHTML = $content;
