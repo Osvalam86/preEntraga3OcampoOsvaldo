@@ -2,6 +2,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const path = document.location.pathname,
     hrefDocument = document.location.href.toUpperCase();
 
+  const $buttonForm = document.querySelector("#buttonForm");
+
+  $buttonForm &&
+    $buttonForm.addEventListener("click", (e) => {
+      e.preventDefault();
+      window.location.href = "../404-error.html";
+    });
+
   // Home functionality
   if (path.includes("index.html") || hrefDocument.includes("INDEX")) {
     //DATA
@@ -105,6 +113,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const $leftSlider = $("#leftSlider"),
       $videoSlider = $("#videoSlider");
 
+    $leftSlider.on("init", function (event, slick, currentSlide, nextSlide) {
+      const $element = $(slick.$slides.get(currentSlide));
+      $element[0].classList.add("is-active");
+    });
+
     $leftSlider.slick({
       infinite: true,
       autoplay: false,
@@ -135,6 +148,16 @@ document.addEventListener("DOMContentLoaded", () => {
         },
       ],
     });
+
+    $leftSlider.on(
+      "afterChange",
+      function (event, slick, currentSlide, nextSlide) {
+        let $actual = document.querySelector(".c-card.is-active");
+        $actual && $actual.classList.remove("is-active");
+        const $element = $(slick.$slides.get(currentSlide));
+        $element[0].classList.add("is-active");
+      }
+    );
 
     $videoSlider &&
       $videoSlider.slick({

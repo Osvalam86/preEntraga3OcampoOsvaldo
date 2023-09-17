@@ -41,7 +41,8 @@
   overflow: hidden;
   position: relative;
   border-radius: $border-xs;
-  &:hover {
+  &:hover,
+  &.is-active {
     .c-card__img {
       filter: grayscale(0%);
       transform: scale(1.08);
@@ -57,8 +58,11 @@
     @extend .e-card-link;
     &:focus-visible,
     &:focus {
-      outline: rem(2px) solid map-get($map: $colors, $key: "color-white");
-      outline-offset: rem(2px);
+      outline: none;
+      &::before {
+        outline: rem(2px) solid map-get($map: $colors, $key: "color-white");
+        outline-offset: rem(-4px);
+      }
     }
   }
   .o-container-gallery & {
@@ -133,7 +137,8 @@
     }
     &__link {
       @extend .e-card-link;
-      &:focus-visible {
+      &:focus-visible,
+      &:focus {
         outline: none;
         &::before {
           border-radius: $border-xs;
