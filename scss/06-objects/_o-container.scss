@@ -32,6 +32,20 @@
       clip-path: polygon(79% 0, 100% 0, 100% 100%, 38% 100%);
       right: 0;
     }
+    &--character,
+    &--comic {
+      clip-path: polygon(62% 0, 100% 0%, 100% 100%, 24% 100%);
+      right: 0;
+      @include respond-to(lg) {
+        opacity: 0.7;
+      }
+    }
+    &--error {
+      opacity: 0.75;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
   }
   &-gallery {
     margin-top: rem(48px);
@@ -46,7 +60,8 @@
 }
 
 // cycle for wallpapers | class modifier
-@each $img in home, characters, comics, contact, videos {
+@each $img in home, characters, comics, contact, videos, character, comic, error
+{
   .o-container-bg--#{$img} {
     background-image: url(../assets/images/wallpapers/#{$img}.webp);
   }

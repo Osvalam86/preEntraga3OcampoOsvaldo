@@ -47,4 +47,33 @@
       color: map-get($map: $colors, $key: "color-secondary");
     }
   }
+  &--variant-sm {
+    margin-top: rem(32px);
+    .slick-slide {
+      height: auto;
+    }
+    .slick-track {
+      margin-bottom: 0;
+    }
+    .slick-list {
+      padding: 0 !important;
+    }
+    .c-card__title {
+      padding: rem(12px) rem(16px);
+    }
+    .c-card__link {
+      font-size: rem(18px);
+    }
+    .c-card__img {
+      aspect-ratio: 1 / 1.6;
+    }
+  }
+  &--variant-videos {
+    height: 100%;
+    .slick-list,
+    .slick-track,
+    .slick-slide {
+      height: 100%;
+    }
+  }
 }

@@ -11,8 +11,46 @@
   &-subtitle {
     @include subtitle();
   }
+  &-subtitle-sm {
+    @include subtitle-sm();
+  }
+  &-error {
+    font-size: rem(140px);
+    color: map-get($map: $colors, $key: "color-white");
+    font-weight: $font-bold;
+    animation: text-pop-up-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    margin: 0;
+    @include respond-to(sm) {
+      font-size: rem(200px);
+    }
+    @include respond-to(md) {
+      font-size: rem(280px);
+    }
+    &--sm {
+      font-size: rem(60px);
+      animation: none;
+      margin-top: -3.5rem;
+      @include respond-to(sm) {
+        font-size: rem(80px);
+        margin-top: -5.313rem;
+      }
+      @include respond-to(md) {
+        font-size: rem(120px);
+      }
+    }
+  }
+  &-body {
+    font-size: rem(20px);
+    margin-bottom: rem(24px);
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+  &-body-error {
+    font-size: $font-size-xl;
+  }
   &-body-lg {
-    font-size: rem(24px);
+    font-size: $font-size-l;
     line-height: rem(32px);
     #introContainer & {
       &:last-of-type {

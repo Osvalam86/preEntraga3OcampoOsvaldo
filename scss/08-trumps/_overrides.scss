@@ -18,3 +18,16 @@
     align-items: flex-end;
   }
 }
+
+// Img fluid bootstrap
+.img-fluid {
+  &--comic {
+    border-radius: rem(8px);
+    border-top: rem(12px) solid map-get($map: $colors, $key: "color-white");
+    border-bottom: rem(12px) solid map-get($map: $colors, $key: "color-white");
+    display: block;
+    margin: 0 auto;
+    max-width: rem(560px);
+    width: 100%;
+  }
+}

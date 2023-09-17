@@ -31,9 +31,8 @@ document.addEventListener("DOMContentLoaded", () => {
       const $content = `
         <h2 class="o-font-title mb-3">${info.title}</h2>
         ${info.intro}
-        <a href="javascript:;" class="btn c-btn-primary u-btn-custom-w mt-4 js-modal"
-          >Conoce más</a
-        >
+        <a href="javascript:;" class="btn c-btn-primary u-btn-custom-w mt-4"
+          >Conoce más</a>
       `;
       $introContainer.innerHTML = $content;
     };
@@ -93,5 +92,66 @@ document.addEventListener("DOMContentLoaded", () => {
         getInfo($mainSlide);
       }
     );
+  }
+
+  // Character Detail functionality
+  if (
+    path.includes("character-detail.html") ||
+    hrefDocument.includes("CHARACTER-DETAIL") ||
+    path.includes("comic-detail.html") ||
+    hrefDocument.includes("COMIC-DETAIL")
+  ) {
+    // SLIDERS
+    const $leftSlider = $("#leftSlider"),
+      $videoSlider = $("#videoSlider");
+
+    $leftSlider.slick({
+      infinite: true,
+      autoplay: false,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      speed: 300,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          },
+        },
+        {
+          breakpoint: 576,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          },
+        },
+        {
+          breakpoint: 420,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+      ],
+    });
+
+    $videoSlider &&
+      $videoSlider.slick({
+        infinite: true,
+        autoplay: false,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        speed: 300,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+        ],
+      });
   }
 });

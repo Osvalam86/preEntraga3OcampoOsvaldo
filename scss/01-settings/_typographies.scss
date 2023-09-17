@@ -54,21 +54,21 @@
 }
 
 //General variables
-$font-primary: 'Lato', sans-serif;
+$font-primary: "Lato", sans-serif;
 
 // Font weight
-$font-thin:     300;
-$font-regular:  400;
-$font-bold:     700;
+$font-thin: 300;
+$font-regular: 400;
+$font-bold: 700;
 
 // Font size
-$font-size-xs:    0.5rem; //8px
-$font-size-s:     0.875rem; //14px
-$font-size-m:     1rem; //16px
-$font-size-l:    1.5rem; // 24px
-$font-size-xl:   2.25rem; // 36px
-$font-size-xxl:  3rem; // 48px
-$font-size-xxxl:  3.875rem; // 62px
+$font-size-xs: 0.5rem; //8px
+$font-size-s: 0.875rem; //14px
+$font-size-m: 1rem; //16px
+$font-size-l: 1.5rem; // 24px
+$font-size-xl: 2.25rem; // 36px
+$font-size-xxl: 3rem; // 48px
+$font-size-xxxl: 3.875rem; // 62px
 $font-size-xxxxl: 5rem; // 80px
 
 // Line-height
@@ -78,25 +78,45 @@ $line-height: 1.5; //minimo por accesibilidad
 $letter-spacing: 0;
 
 // Title
-$font-title:  $font-primary;
+$font-title: $font-primary;
 $font-title-size: $font-size-xxl;
 $font-title-weight: $font-bold;
 $title-line-height: 1;
-$title-color: map-get($map: $colors, $key: "color-white");
+$title-color: map-get(
+  $map: $colors,
+  $key: "color-white",
+);
 $title-letter-spacing: 0;
 
 // Subtitle
-$font-subtitle:  $font-primary;
+$font-subtitle: $font-primary;
 $font-subtitle-size: $font-size-xxxl;
 $font-subtitle-weight: $font-bold;
 $subtitle-line-height: 1;
-$subtitle-color: map-get($map: $colors, $key: "color-white");
+$subtitle-color: map-get(
+  $map: $colors,
+  $key: "color-white",
+);
 $subtitle-letter-spacing: 0;
+
+// Subtitle sm
+$font-subtitle-sm: $font-primary;
+$font-subtitle-sm-size: $font-size-xxl;
+$font-subtitle-sm-weight: $font-bold;
+$subtitle-sm-line-height: 1;
+$subtitle-sm-color: map-get(
+  $map: $colors,
+  $key: "color-white",
+);
+$subtitle-sm-letter-spacing: 0;
 
 // BODY
 $font-body-family: $font-primary;
 $font-body-size: $font-size-m;
 $font-body-weight: $font-regular;
 $body-line-height: $line-height;
-$body-color: map-get($map: $colors, $key: "color-white");
+$body-color: map-get(
+  $map: $colors,
+  $key: "color-white",
+);
 $body-letter-spacing: $letter-spacing;
