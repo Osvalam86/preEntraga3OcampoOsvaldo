@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const path = document.location.pathname,
-    hrefDocument = document.location.href.toUpperCase();
+    hrefDocument = document.location.href.toUpperCase(),
+    title = document.title.toUpperCase();
 
   const $buttonForm = document.querySelector("#buttonForm");
 
@@ -11,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
   // Home functionality
-  if (path.includes("index.html") || document.title.includes("PRINCIPAL")) {
+  if (path.includes("index.html") || title.includes("PRINCIPAL")) {
     //DATA
     const $introContainer = document.getElementById("introContainer");
 
