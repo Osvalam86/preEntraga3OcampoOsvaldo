@@ -385,21 +385,36 @@ p {
 }
 .o-font-subtitle {
   font-family: "Lato", sans-serif;
-  font-size: 3.875rem;
+  font-size: 2.25rem;
   font-weight: 700;
   line-height: 1;
   color: #fff;
   letter-spacing: 0;
   margin: 0;
 }
+@media (min-width: 420px) {
+  .o-font-subtitle {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 576px) {
+  .o-font-subtitle {
+    font-size: 3.875rem;
+  }
+}
 .o-font-subtitle-sm {
   font-family: "Lato", sans-serif;
-  font-size: 3rem;
+  font-size: 2.25rem;
   font-weight: 700;
   line-height: 1;
   color: #fff;
   letter-spacing: 0;
   margin: 0;
+}
+@media (min-width: 576px) {
+  .o-font-subtitle-sm {
+    font-size: 3rem;
+  }
 }
 .o-font-error {
   font-size: 8.75rem;

@@ -10,9 +10,18 @@
   }
   &-subtitle {
     @include subtitle();
+    @include respond-to(xs) {
+      font-size: $font-size-xxl;
+    }
+    @include respond-to(sm) {
+      font-size: $font-size-xxxl;
+    }
   }
   &-subtitle-sm {
     @include subtitle-sm();
+    @include respond-to(sm) {
+      font-size: $font-size-xxl;
+    }
   }
   &-error {
     font-size: rem(140px);
