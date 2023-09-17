@@ -51,11 +51,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     $mainSlider.slick({
       infinite: true,
-      autoplay: false,
+      autoplay: true,
       slidesToShow: 3,
       slidesToScroll: 1,
       speed: 300,
-      autoplaySpeed: 4000,
+      autoplaySpeed: 3500,
       centerMode: true,
       responsive: [
         {
@@ -94,13 +94,4 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     );
   }
-
-  // MODAL WORKING
-  const $modal = new bootstrap.Modal(document.getElementById("modalWorking"));
-
-  document.addEventListener("click", (e) => {
-    if (e.target.matches(".js-modal")) {
-      $modal.show();
-    }
-  });
 });

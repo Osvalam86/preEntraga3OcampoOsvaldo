@@ -10,3 +10,11 @@
   box-shadow: none;
   outline: 1px solid var(--color-white);
 }
+
+// Card overlay bootstrap
+.card-img-overlay {
+  .c-card & {
+    display: flex;
+    align-items: flex-end;
+  }
+}

@@ -14,12 +14,14 @@
   &-body-lg {
     font-size: rem(24px);
     line-height: rem(32px);
-    &:last-of-type {
-      overflow: hidden;
-      text-overflow: ellipsis;
-      display: -webkit-box;
-      -webkit-line-clamp: 4;
-      -webkit-box-orient: vertical;
+    #introContainer & {
+      &:last-of-type {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+      }
     }
     @include respond-to(lg) {
       padding-right: rem(32px);

@@ -66,13 +66,31 @@
     color: map-get($map: $colors, $key: "color-white");
     background-color: map-get($map: $colors, $key: "color-secondary");
     border-color: map-get($map: $colors, $key: "color-secondary");
-    &:hover {
-      color: map-get($map: $colors, $key: "color-white");
-      background-color: map-get($map: $colors, $key: "color-secondary-dark");
-      border-color: map-get($map: $colors, $key: "color-secondary-dark");
+    box-shadow: map-get($map: $colors, $key: "color-secondary-dark") 0px 4px 0px
+      0px;
+    &::before {
+      background-color: map-get($map: $colors, $key: "color-secondary-light");
     }
-    &:active {
-      background-color: map-get($map: $colors, $key: "color-secondary");
+    &.btn {
+      &:hover,
+      &:focus,
+      &:focus-visible,
+      &:active {
+        color: map-get($map: $colors, $key: "color-white");
+        background-color: map-get($map: $colors, $key: "color-secondary");
+        border-color: map-get($map: $colors, $key: "color-secondary");
+        box-shadow: map-get($map: $colors, $key: "color-secondary-dark") 0px 4px
+          0px 0px !important;
+      }
+      &:active {
+        &::before {
+          background-color: map-get($map: $colors, $key: "color-secondary");
+        }
+      }
+      &:focus-visible {
+        outline: rem(2px) solid map-get($map: $colors, $key: "color-white");
+        outline-offset: rem(6px);
+      }
     }
   }
 }

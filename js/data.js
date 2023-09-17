@@ -8,7 +8,7 @@ const dataHome = [
   {
     title: "Ghost Spider",
     intro:
-      '<p class="o-font-body-lg">El 2 de junio se estrena “Spider-Man: Cruzando el Multiverso” (“Spider-Man: Across the Spider-verse”), la secuela del éxito animado “Spider-Man: Un nuevo universo” (“Spider-Man: Into the Spider-verse”). Dicha película estará protagonizada por Miles Morales, el otro Spidey, y por el personaje del que es objeto este texto: Gwen Stacy, alias Ghost-Spider o Spider-Gwen.</p><p class="o-font-body-lg">Recalquemos que, si bien se trata de un personaje bastante moderno, el personaje conocido popularmente como Spider-Gwen se ha convertido en una favorita entre el fandom, apareciendo en videojuegos, series animadas y numerosas colecciones secundarias de la línea arácnida. Tanto, que ha llegado a rivalizar con algunas de las mejores versiones alternativas del Trepamuros original.</p>',
+      '<p class="o-font-body-lg">El 2 de junio se estrena “Spider-Man: Cruzando el Multiverso” (“Spider-Man: Across the Spider-verse”), la secuela del éxito animado “Spider-Man: Un nuevo universo”. Dicha película estará protagonizada por Miles Morales, el otro Spidey, y por el personaje del que es objeto este texto: Gwen Stacy, alias Ghost-Spider/Spider-Gwen.</p><p class="o-font-body-lg">Recalquemos que, si bien se trata de un personaje bastante moderno, el personaje conocido popularmente como Spider-Gwen se ha convertido en una favorita entre el fandom, apareciendo en videojuegos, series animadas y numerosas colecciones secundarias de la línea arácnida. Tanto, que ha llegado a rivalizar con algunas de las mejores versiones alternativas del Trepamuros original.</p>',
     link: "views/character-detail.html",
   },
   {
@@ -20,7 +20,7 @@ const dataHome = [
   {
     title: "Spider Ham",
     intro:
-      '<p class="o-font-body-lg">Peter Porker, el asombroso "Spider-Ham", es una araña que fue mordida por la radioactiva May Porker, que lo transformo en un cerdo antropomórfico, pero con sus habilidades arácnidas intactas. Usando su recién descubierto genio científico, Peter creó lanza-redes mecánicos para reemplazar sus hilanderos naturales ahora perdidos y se convirtió en un nuevo superhéroe, el espectacular Spider-Ham.</p><p class="o-font-body-lg">Spider-Ham es una sátira de Spider-Man, publicada por la propia Marvel, cuyo protagonista es una versión de Spider-Man que es un cerdo (Peter Porker), apareciendo versiones animales de sus amigos y enemigos. Algunos de sus aliados eran Sub-Marsupial, Asinine Torch, Hulk Bunny, Capitan Americat, Goose Rider, Croctor Strange entre otros.</p>',
+      '<p class="o-font-body-lg">Peter Porker, el asombroso "Spider-Ham", es una araña que fue mordida por la radioactiva May Porker, que lo transformo en un cerdo antropomórfico, pero con sus habilidades arácnidas intactas. Creó lanza-redes mecánicos remplazando sus hilanderos naturales ahora perdidos y se convirtió en el espectacular Spider-Ham.</p><p class="o-font-body-lg">Spider-Ham es una sátira de Spider-Man, publicada por la propia Marvel, cuyo protagonista es una versión de Spider-Man que es un cerdo (Peter Porker), apareciendo versiones animales de sus amigos y enemigos. Algunos de sus aliados eran Sub-Marsupial, Asinine Torch, Hulk Bunny, Capitan Americat, Goose Rider, Croctor Strange entre otros.</p>',
     link: "views/character-detail.html",
   },
 ];

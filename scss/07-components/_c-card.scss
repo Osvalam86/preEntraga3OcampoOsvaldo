@@ -1,6 +1,78 @@
+// Extend Class
+.e-card-link {
+  display: block;
+  color: map-get($map: $colors, $key: "color-white");
+  text-decoration: none;
+  font-size: 1.5rem;
+  &::before {
+    cursor: pointer;
+    content: "";
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: z(default);
+    position: absolute;
+  }
+}
+.e-card-title {
+  border-radius: $border-xs $border-xs 0 0;
+  display: block;
+  background-color: map-get($map: $colors, $key: "color-dark");
+  padding: rem(16px);
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  transition: background-color 0.3s ease-in-out;
+}
+.e-card-img {
+  display: block;
+  filter: grayscale(95%);
+  object-fit: cover;
+  object-position: 50% 12%;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+}
+
+// Card Component
 .c-card {
-  overflow: visible;
+  border: rem(1.5px) solid map-get($map: $colors, $key: "color-white");
+  overflow: hidden;
   position: relative;
+  border-radius: $border-xs;
+  &:hover {
+    .c-card__img {
+      filter: grayscale(0%);
+      transform: scale(1.08);
+    }
+    .c-card__title {
+      background-color: map-get($map: $colors, $key: "color-secondary");
+    }
+  }
+  &__title {
+    @extend .e-card-title;
+  }
+  &__link {
+    @extend .e-card-link;
+    &:focus-visible,
+    &:focus {
+      outline: rem(2px) solid map-get($map: $colors, $key: "color-white");
+      outline-offset: rem(2px);
+    }
+  }
+  .o-container-gallery & {
+    animation-duration: 1s;
+    animation-delay: 0.25s;
+    animation-name: animate-fade;
+    animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
+    animation-fill-mode: backwards;
+    animation-name: animate-pop;
+  }
+  &__img {
+    @extend .e-card-img;
+    transition: filter 0.3s ease-out, transform 0.3s ease-out;
+  }
   &-slider {
     border: none;
     transition: transform 0.3s ease;
@@ -40,15 +112,10 @@
       }
     }
     &__bg-img {
-      border-radius: $border-xs;
       box-shadow: map-get($map: $shadow, $key: "card");
-      filter: grayscale(95%);
-      object-fit: cover;
-      object-position: 50% 12%;
-      aspect-ratio: 1 / 1;
-      height: 100%;
+      border-radius: $border-xs;
+      @extend .e-card-img;
       transition: all 0.3s ease-in-out;
-      width: 100%;
     }
     &__main-img {
       position: absolute;
@@ -63,30 +130,10 @@
       transition: all 0.3s ease;
     }
     &__title {
-      border-radius: $border-xs $border-xs 0 0;
-      display: block;
-      background-color: map-get($map: $colors, $key: "color-dark");
-      padding: rem(8px) rem(16px);
-      margin: 0;
-      text-align: center;
-      width: 100%;
-      transition: background-color 0.3s ease-out;
+      @extend .e-card-title;
     }
     &__link {
-      display: block;
-      color: map-get($map: $colors, $key: "color-white");
-      text-decoration: none;
-      font-size: 1.5rem;
-      &::before {
-        cursor: pointer;
-        content: "";
-        bottom: 0;
-        left: 0;
-        top: 0;
-        right: 0;
-        z-index: z(default);
-        position: absolute;
-      }
+      @extend .e-card-link;
       &:focus-visible {
         outline: none;
         &::before {
@@ -96,9 +143,5 @@
         }
       }
     }
-  }
-  &__img {
-    filter: sepia(0.8);
-    transition: filter 0.3s ease-out, transform 0.3s ease-out;
   }
 }
