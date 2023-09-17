@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <h2 class="o-font-title mb-3">${info.title}</h2>
         ${info.intro}
         <a href="javascript:;" class="btn c-btn-primary u-btn-custom-w mt-4 js-modal"
-          >Saber más</a
+          >Conoce más</a
         >
       `;
       $introContainer.innerHTML = $content;
