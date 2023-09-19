@@ -1011,9 +1011,18 @@ p {
 .c-social-networks__link--google:hover .c-social-networks__tooltip::before {
   background-color: #df4b38;
 }
+.c-social-networks__logo {
+  height: 2.375rem;
+  width: 2.375rem;
+}
 
 .navbar-collapse {
   justify-content: flex-end;
+}
+
+.navbar-brand__logo {
+  height: 3.4375rem;
+  width: 100%;
 }
 
 .navbar-toggler:focus,
