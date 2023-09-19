@@ -5,6 +5,11 @@
   justify-content: flex-end;
 }
 
+.navbar-brand__logo {
+  height: rem(55px);
+  width: 100%;
+}
+
 .navbar-toggler:focus,
 .navbar-toggler:focus:not(:focus-visible) {
   box-shadow: none;
