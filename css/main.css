@@ -521,12 +521,15 @@ p {
 .btn-base:hover::before, .c-btn-secondary:hover::before, .c-btn-primary:hover::before {
   width: 100%;
 }
+.btn-base:active, .c-btn-secondary:active, .c-btn-primary:active {
+  transform: translateY(0.25rem);
+}
 
 .c-btn-primary {
   color: #fff;
   background-color: #df1f2d;
   border-color: #df1f2d;
-  box-shadow: #a30e19 0px 4px 0px 0px;
+  box-shadow: #a30e19 0px 0.25rem 0px 0px;
 }
 .c-btn-primary::before {
   background-color: #ee4a55;
@@ -535,7 +538,10 @@ p {
   color: #fff;
   background-color: #df1f2d;
   border-color: #df1f2d;
-  box-shadow: #a30e19 0px 4px 0px 0px !important;
+  box-shadow: #a30e19 0px 0.25rem 0px 0px !important;
+}
+.c-btn-primary.btn:active {
+  box-shadow: none !important;
 }
 .c-btn-primary.btn:active::before {
   background-color: #df1f2d;
@@ -548,7 +554,7 @@ p {
   color: #fff;
   background-color: #092d7c;
   border-color: #092d7c;
-  box-shadow: #051d53 0px 4px 0px 0px;
+  box-shadow: #051d53 0px 0.25rem 0px 0px;
 }
 .c-btn-secondary::before {
   background-color: #1d4497;
@@ -557,7 +563,10 @@ p {
   color: #fff;
   background-color: #092d7c;
   border-color: #092d7c;
-  box-shadow: #051d53 0px 4px 0px 0px !important;
+  box-shadow: #051d53 0px 0.25rem 0px 0px !important;
+}
+.c-btn-secondary.btn:active {
+  box-shadow: none !important;
 }
 .c-btn-secondary.btn:active::before {
   background-color: #092d7c;

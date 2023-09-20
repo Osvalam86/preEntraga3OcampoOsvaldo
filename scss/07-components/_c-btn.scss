@@ -26,6 +26,9 @@
       width: 100%;
     }
   }
+  &:active {
+    transform: translateY(rem(4px));
+  }
 }
 
 .c-btn {
@@ -34,8 +37,8 @@
     color: map-get($map: $colors, $key: "color-white");
     background-color: map-get($map: $colors, $key: "color-primary");
     border-color: map-get($map: $colors, $key: "color-primary");
-    box-shadow: map-get($map: $colors, $key: "color-primary-dark") 0px 4px 0px
-      0px;
+    box-shadow: map-get($map: $colors, $key: "color-primary-dark") 0px rem(4px)
+      0px 0px;
     &::before {
       background-color: map-get($map: $colors, $key: "color-primary-light");
     }
@@ -47,10 +50,11 @@
         color: map-get($map: $colors, $key: "color-white");
         background-color: map-get($map: $colors, $key: "color-primary");
         border-color: map-get($map: $colors, $key: "color-primary");
-        box-shadow: map-get($map: $colors, $key: "color-primary-dark") 0px 4px
-          0px 0px !important;
+        box-shadow: map-get($map: $colors, $key: "color-primary-dark") 0px
+          rem(4px) 0px 0px !important;
       }
       &:active {
+        box-shadow: none !important;
         &::before {
           background-color: map-get($map: $colors, $key: "color-primary");
         }
@@ -66,8 +70,8 @@
     color: map-get($map: $colors, $key: "color-white");
     background-color: map-get($map: $colors, $key: "color-secondary");
     border-color: map-get($map: $colors, $key: "color-secondary");
-    box-shadow: map-get($map: $colors, $key: "color-secondary-dark") 0px 4px 0px
-      0px;
+    box-shadow: map-get($map: $colors, $key: "color-secondary-dark") 0px
+      rem(4px) 0px 0px;
     &::before {
       background-color: map-get($map: $colors, $key: "color-secondary-light");
     }
@@ -79,10 +83,11 @@
         color: map-get($map: $colors, $key: "color-white");
         background-color: map-get($map: $colors, $key: "color-secondary");
         border-color: map-get($map: $colors, $key: "color-secondary");
-        box-shadow: map-get($map: $colors, $key: "color-secondary-dark") 0px 4px
-          0px 0px !important;
+        box-shadow: map-get($map: $colors, $key: "color-secondary-dark") 0px
+          rem(4px) 0px 0px !important;
       }
       &:active {
+        box-shadow: none !important;
         &::before {
           background-color: map-get($map: $colors, $key: "color-secondary");
         }
